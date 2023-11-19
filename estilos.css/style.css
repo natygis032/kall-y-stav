@@ -194,6 +194,8 @@ color:#110803ef;
 .section4__contacto
 {
     align-items:center;
+    color: #070300
+    ;
 
 
 }
@@ -206,7 +208,7 @@ color:#110803ef;
 .section5__boton
 {
 background-color:rgb(223, 102, 16);
-text:rgb(248, 246, 242);
+text-decoration-color:rgb(248, 246, 242);
 border-color:black;
 
 }
@@ -218,10 +220,6 @@ background-color:#070300;
 
 }
 
-.form-check-input
-{
-
-}
 
 
 
