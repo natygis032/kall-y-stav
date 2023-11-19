@@ -1,0 +1,267 @@
+/**
+{
+font-family:'Ubuntu',sans-serif;
+
+}*/
+
+.head 
+{
+    
+    background-image:linear-gradient(147deg, #d78400 0%, #cb4800 74%);
+    padding:100px;
+    /*box-sizing:border-box;*/
+    font-weight:300px;
+
+
+}
+ 
+    
+.a
+{
+    color:black;
+    font-weight:bold;
+    
+}
+
+.p
+{
+    color:black;
+    font-weight:bold;
+    
+}
+
+
+.header
+{
+font-weight:300px;
+color:#110803ef;
+width: 100%;
+height: 100%;;
+/*border: 1px solid rgb(255, 0,76);*/
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-between;
+    
+}
+  
+    
+.iframe,video,body
+    {
+    max-width:600PX;
+    padding-top:0px;
+    border-radius:0%;
+    margin:auto;
+    align-items:center;
+    align-content:center;
+    background-image:linear-gradient(147deg, #d78400 0%, #cb4800 74%);
+    }
+
+
+   .header__logo 
+{
+    max-width:600PX;
+    display:flex;
+    flex-direction:column;    
+ 
+}
+    
+    
+.header__titulorecursoshumanos
+{
+    color:#110803ef;
+    font-size:40px;
+    font-family:'Ubuntu', sans-serif;
+    font-style:inherit;
+    
+}
+
+    /*font-weight:700px;
+    border: 0px solid black
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-transform:none; */
+       
+.header__fraseteestamosesperando 
+{
+text-align:center;
+font-size:35px;
+font-family:'Ubuntu', sans-serif;
+font-style:normal;
+text-transform:none;
+padding:0px;
+}   
+    
+
+.footer
+{   max-width:600px;
+    border-color:antiquewhite;
+    border-style:hidden;
+    height:100px;
+    display:flex;
+    flex-direction:row;/* aplica el eje principal(eje x)*/
+    justify-content:flex-start; /* CONTROLA AL EJE PRINCIPAL dependiente de flex-direction*/
+    align-items:flex-end; /*controla al eje secundario dependiendo de loq ue figura en fklex direction seria lo contrario eje y/*
+*/
+}
+
+.footer__contacto
+{
+    text-align:center;
+    
+}
+
+
+.main
+{
+    font-family:'Ubuntu',sans-serif;
+    display:flex;
+    flex-direction:column;
+    max-width:900px;
+    max-height:auto;
+    align-content:space-around;
+    color:#110803ef;
+
+}       
+ 
+    /*
+    background-color:aliceblue;
+    width:600px;
+    min-height:200vh;
+    ;*/
+
+    
+.section1__lista .section1__enlace
+
+{ 
+color:#110803ef;
+}
+
+
+.section2__estilo
+{  
+color:#110803ef;
+ 
+}
+
+
+.section__fraseubicacion
+{
+padding:0px;
+font-weight:lighter;
+font-family:'Ubuntu',sans-serif;
+display:flex;
+flex-direction:row;
+
+}
+
+.section2__mapa
+{ height: 300px;
+  width:90%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  align-content:center;
+
+}
+.section3__enlace
+{
+    color:#110803ef;
+   
+}
+
+
+.section4__lista 
+{
+display:flex;
+display:list-item;
+flex-direction:column;
+align-items:center;
+color:#110803ef;
+}
+
+.section4__frasealgunasempresasconquieneestrabajamos
+{   list-style-type:none;
+    display:flex;
+    flex-direction:row;
+    text-align: center;
+    justify-content:center;
+
+}
+
+.section4__contacto
+{
+    align-items:center;
+
+
+}
+
+.section5
+{
+    padding:2rem;
+}
+
+.section5__boton
+{
+background-color:rgb(223, 102, 16);
+text:rgb(248, 246, 242);
+border-color:black;
+
+}
+
+
+.section5__boton:hover
+{
+background-color:#070300;
+
+}
+
+.form-check-input
+{
+
+}
+
+
+
+/*
+
+.piedepaginaturqueza{
+    background-color: #76bacb;
+    border: 0px solid black;
+    padding:0%;
+    
+}
+.fondorosa{
+    background-color: bisque;
+}
+
+
+
+
+    se pueden buscar generadores de color generator color css ó pictures css
+
+    ej color pickers css
+    https://cssgradient.io/gradient-backgrounds/
+    
+    body
+    {
+    background-color:#FFE53B}
+    o sino
+    
+    body
+    {
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);}
+   */
+
+   /*PARA APLICAR LOS ESTILOS EN LA PARTE DE LA PAGINA DE CONTACTO VAMOS A CREAR UNA NUEVA SECCION- SECCION 5/*
+
+
+   /*media querys se aplican al final del archivo de estilos*/
+   
+   @media(min-widht: 768px)
+   {
+   body {background-color:red;}
+}
+
