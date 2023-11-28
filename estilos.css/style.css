@@ -1,78 +1,111 @@
-/**
+*
 {
-font-family:'Ubuntu',sans-serif;
-
-}*/
-
-.head 
-{
-    
-    background-image:linear-gradient(147deg, #d78400 0%, #cb4800 74%);
-    padding:100px;
-    /*box-sizing:border-box;*/
-    font-weight:300px;
-
+font-family: 'Ubuntu', sans-serif;
+margin:auto;
+color:black;
 
 }
- 
-    
-.a
-{
-    color:black;
-    font-weight:bold;
-    
-}
 
-.p
-{
-    color:black;
-    font-weight:bold;
-    
-}
-
+.body
+{display:flex;
+flex-direction: column;
+align-items:start;
+align-content:flex-start;
+text-align: left;
+}    
 
 .header
 {
-font-weight:300px;
-color:#110803ef;
-width: 800px;
-height: 100%;;
-/*border: 1px solid rgb(255, 0,76);*/
+width:900px;
+margin: auto ;
 display:flex;
 flex-direction:column;
-align-items:center;
-justify-content:space-between;
-    
+align-items: left;
+justify-items: center;
+text-align: left;
+
 }
-  
+
+
+.main
+{ 
+max-width: 600px;
+display:flex;
+flex-direction:column;
+align-items:self-start;
+align-content: space-between;
+
+
+}       
+ 
+.head 
+{
+display:flex;
+padding-top:10px;
+
+
+
+
+}
+ 
+.a.p    
+{color:rgb(41, 39, 39);
+ display:flex;
+ flex-direction:column;
+ padding-left:20px;
+
+
+}
+
+.body
+{  
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin:50px;
+    background-color:rgb(221, 144, 28) ;
+       
+}
     
-.iframe,video,body
-    {
-    max-width:600PX;
-    padding-top:0px;
-    border-radius:0%;
-    margin:auto;
-    align-items:center;
-    align-content:center;
-    background-image:linear-gradient(147deg, #d78400 0%, #cb4800 74%);
-    }
+.iframe
+{
+display:flex;
+padding:20px;
+padding-bottom: 20px;
+ 
+}
+
+.volver_al_inicio
+{margin-left:50px;
+
+
+}
 
 
    .header__logo 
-{
-    max-width:600PX;
-    display:flex;
-    flex-direction:column;    
- 
+   {
+
+max-width:600px;
+height:auto;   
+display:flex;
+flex-direction:column;
+align-content: center;
+padding-bottom: 10px;
 }
+ 
+
     
     
 .header__titulorecursoshumanos
 {
-    color:#110803ef;
-    font-size:40px;
-    font-family:'Ubuntu', sans-serif;
+    color:#0f0701;
+    font-size:35px;
     font-style:inherit;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    justify-content: center;
+    
     
 }
 
@@ -86,129 +119,149 @@ justify-content:space-between;
        
 .header__fraseteestamosesperando 
 {
+padding-top: 40px;
 text-align:center;
-font-size:35px;
-font-family:'Ubuntu', sans-serif;
-font-style:normal;
-text-transform:none;
-padding:0px;
-}   
-    
+text-decoration-line: unset;
+font-size:28px;
+padding-bottom:20px;
+border-radius: 10px;
+color:#0f0701;
+
+}  
+
 
 .footer
-{   max-width:600px;
+{  
     border-color:antiquewhite;
     border-style:hidden;
-    height:100px;
     display:flex;
-    flex-direction:row;/* aplica el eje principal(eje x)*/
-    justify-content:flex-start; /* CONTROLA AL EJE PRINCIPAL dependiente de flex-direction*/
-    align-items:flex-end; /*controla al eje secundario dependiendo de loq ue figura en fklex direction seria lo contrario eje y/*
+    padding-top:30px;
+    
+    flex-direction:column;/* aplica el eje principal(eje x)*/
+    justify-content:center; /* CONTROLA AL EJE PRINCIPAL dependiente de flex-direction*/
+align-items:center; /*controla al eje secundario dependiendo de loq ue figura en fklex direction seria lo contrario eje y/*
 */
 }
 
 .footer__contacto
 {
-    text-align:center;
+align-content:left;
     
 }
-
-
-.main
-{
-    font-family:'Ubuntu',sans-serif;
-    display:flex;
-    flex-direction:column;
-    max-width:900px;
-    max-height:auto;
-    align-content:space-around;
-    color:#110803ef;
-
-}       
- 
-    /*
-    background-color:aliceblue;
-    width:600px;
-    min-height:200vh;
-    ;*/
-
     
-.section1__lista .section1__enlace
+.section1__lista 
 
 { 
-color:#110803ef;
+display:flex;
+flex-direction:column;
+padding-right:400px;
+padding-bottom: 20px;
+padding-top:20px;
+font-size:20px;
+
 }
 
 
 .section2__estilo
 {  
-color:#110803ef;
- 
+color: #070300;
+width:600px; 
 }
 
 
 .section__fraseubicacion
 {
-padding:0px;
-font-weight:lighter;
-font-family:'Ubuntu',sans-serif;
-display:flex;
-flex-direction:row;
 
+display:flex;
+flex-direction:column;
+text-align:center;
+font-size:18px;
+font-weight: normal;
+text-decoration: underline;
+padding-bottom: 20px;
+padding-top: 10px;
 }
 
 .section2__mapa
-{ height: 300px;
-  width:90%;
+{ width: 600px;
+  height:300px;
   display:flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items:center;
-  align-content:center;
-
 }
-.section3__enlace
+
+.section3__lista
 {
-    color:#110803ef;
+box-sizing:border-box;
+display:flex;
+flex-direction:column;
+justify-content: start;
+padding-right: 400px;
+padding-bottom: 20px;
+
+
+    }
+
+    .section3__item1 .section3__item2
+    {box-sizing: border-box;
+    display:flex;
+    flex-direction:column ;
+    justify-content: space-between;
+       
+    }
+
    
+.section4
+{padding: top 20px;
+display:flex;
+flex-direction:column;
+padding-bottom: 20px;
+justify-items: flex-start;
+
 }
 
 
 .section4__lista 
-{
-display:flex;
-display:list-item;
-flex-direction:column;
-align-items:center;
-color:#110803ef;
+{display:flex;
+color: #070300;
+align-items: left;
+padding-top:30px;
+padding-bottom:30px;
 }
 
 .section4__frasealgunasempresasconquieneestrabajamos
-{   list-style-type:none;
+{  font-weight:bold;
     display:flex;
-    flex-direction:row;
-    text-align: center;
-    justify-content:center;
-
+    margin:15px;
+    padding-bottom:10px;
 }
+
+.section4_enlace
+{align-items:left;
+padding-top: 30px;
+padding-bottom:20px}
+
+.section4__imagenrecursoshumanosempresas
+{display:flex;
+padding:20px;}
 
 .section4__contacto
 {
-    align-items:center;
-    color: #070300
-    ;
-
+    align-items:left;
+    padding-top:20px;
 
 }
 
 .section5
 {
-    padding:2rem;
+padding:2rem;
 }
 
 .section5__boton
 {
+
+text-decoration-color:rgb(24, 23, 22);
 background-color:rgb(223, 102, 16);
-text-decoration-color:rgb(248, 246, 242);
 border-color:black;
 
 }
@@ -216,12 +269,13 @@ border-color:black;
 
 .section5__boton:hover
 {
-background-color:#070300;
+background-color:#827d79;
 
 }
 
-
-
+.fondocontacto
+{background-color:rgb(223, 102, 16);
+}
 
 /*
 
@@ -234,7 +288,6 @@ background-color:#070300;
 .fondorosa{
     background-color: bisque;
 }
-
 
 
 
@@ -259,7 +312,7 @@ background-color:#070300;
    /*media querys se aplican al final del archivo de estilos*/
    
    @media(min-widht: 768px)
-   {
-   body {background-color:red;}
-}
+   {background-color:}
 
+   
+       
