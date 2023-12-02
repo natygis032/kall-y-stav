@@ -1,172 +1,128 @@
 *
 {
-font-family: 'Ubuntu', sans-serif;
 margin:auto;
-color:black;
-
+box-sizing:border-box;
 }
-
-.body
-{display:flex;
-flex-direction: column;
-align-items:start;
-align-content:flex-start;
-text-align: left;
-}    
 
 .header
 {
-width:900px;
-margin: auto ;
 display:flex;
 flex-direction:column;
-align-items: left;
-justify-items: center;
-text-align: left;
+align-items: center;
+padding: 4rem;
+border:1px solid violet;
 
 }
 
-
-.main
-{ 
-max-width: 600px;
-display:flex;
-flex-direction:column;
-align-items:self-start;
-align-content: space-between;
-
-
-}       
- 
-.head 
+.header,.main,.footer
 {
-display:flex;
-padding-top:10px;
-
-
-
-
-}
- 
-.a.p    
-{color:rgb(41, 39, 39);
- display:flex;
- flex-direction:column;
- padding-left:20px;
-
+margin:0 auto;
+max-width:600px;
+border:12px solid rgb(225, 222, 65),
 
 }
 
-.body
-{  
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    margin:50px;
-    background-color:rgb(221, 144, 28) ;
-       
-}
-    
-.iframe
+
+
+.header__logo 
 {
-display:flex;
-padding:20px;
-padding-bottom: 20px;
- 
-}
-
-.volver_al_inicio
-{margin-left:50px;
-
-
-}
-
-
-   .header__logo 
-   {
-
 max-width:600px;
 height:auto;   
 display:flex;
 flex-direction:column;
 align-content: center;
-padding-bottom: 10px;
+padding-bottom: 30px;
 }
+
  
-
-    
-    
 .header__titulorecursoshumanos
-{
-    color:#0f0701;
-    font-size:35px;
-    font-style:inherit;
-    display:flex;
-    flex-direction:column;
-    text-align:center;
-    justify-content: center;
-    
-    
+{ 
+font-size:2rem; 
+font-weight:700;
+text-align:center;
+text-transform:uppercase;
+margin-bottom:2rem;
+
 }
 
-    /*font-weight:700px;
-    border: 0px solid black
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-transform:none; */
-       
 .header__fraseteestamosesperando 
 {
-padding-top: 40px;
+font-weight:normal;
+font-size: 1rem;
 text-align:center;
-text-decoration-line: unset;
-font-size:28px;
-padding-bottom:20px;
-border-radius: 10px;
-color:#0f0701;
-
-}  
+font-style:oblique;
 
 
-.footer
-{  
-    border-color:antiquewhite;
-    border-style:hidden;
-    display:flex;
-    padding-top:30px;
-    
-    flex-direction:column;/* aplica el eje principal(eje x)*/
-    justify-content:center; /* CONTROLA AL EJE PRINCIPAL dependiente de flex-direction*/
-align-items:center; /*controla al eje secundario dependiendo de loq ue figura en fklex direction seria lo contrario eje y/*
-*/
 }
 
-.footer__contacto
-{
-align-content:left;
-    
-}
-    
-.section1__lista 
-
+.main
 { 
+max-width:600px;
 display:flex;
 flex-direction:column;
-padding-right:400px;
-padding-bottom: 20px;
-padding-top:20px;
-font-size:20px;
+border:2px solid greenyellow;
+}     
+
+.section1
+{padding:1rem;
 
 }
+
+.section1__lista
+{display:flex;
+padding:1rem;
+flex-direction:row;
+justify-content:space-around;
+align-items: center;
+gap:1rem;
+
+}
+
+.section1__item
+{  
+background-color:#ed870e;
+border-radius:0.25rem;
+list-style:none;
+color:#e4ded9;
+
+}
+
+
+.section1__enlace
+{
+display:flex;
+padding:1rem;
+text-decoration:none;
+color:aliceblue;
+}
+
+
+.body
+{  
+background-color:#070300;
+color:#e4ded9;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+/*
+
+ .volver_al_inicio
+{margin-left:50px;
+
+
+}
+
+/*
+flex-direction:column;/* aplica el eje principal(eje x)
+    justify-content:center; CONTROLA AL EJE PRINCIPAL dependiente de flex-direction
+align-items:center; /*controla al eje secundario dependiendo de loq ue figura en fklex direction seria lo contrario eje y
+*/
 
 
 .section2__estilo
 {  
-color: #070300;
-width:600px; 
-}
+padding:2rem;}
 
 
 .section__fraseubicacion
@@ -177,78 +133,110 @@ flex-direction:column;
 text-align:center;
 font-size:18px;
 font-weight: normal;
-text-decoration: underline;
-padding-bottom: 20px;
-padding-top: 10px;
+text-decoration:underline;
+padding-bottom:20px;
+padding-top:10px;
 }
 
-.section2__mapa
-{ width: 600px;
+.section2__mapa,.iframe
+{ width: 530px;
   height:300px;
+  margin:0 auto;
   display:flex;
-  flex-direction: column;
-  align-items:center;
+  
+}
+
+.section3
+{
+padding:2rem;
+
+
+
 }
 
 .section3__lista
-{
-box-sizing:border-box;
-display:flex;
+{display:flex;
 flex-direction:column;
-justify-content: start;
-padding-right: 400px;
-padding-bottom: 20px;
+padding:1rem;
+justify-content:center;
+text-transform:uppercase;
+text-decoration: none;
+list-style:none;
+gap:1rem;
+}
 
 
-    }
 
-    .section3__item1 .section3__item2
-    {box-sizing: border-box;
-    display:flex;
-    flex-direction:column ;
-    justify-content: space-between;
-       
-    }
+.section3__item
+{
+width:300px;
+height:30px;
+border:1px solid yellow;
+background-color:#ed870e;
+text-align:center;
+border-radius:0.5rem;
+gap:1rem;
+
+}
+
+.section3__enlace
+{font-weight:4rem;
+color:#e4ded9;
+text-decoration:none;
+text-transform:none;
+justify-content:center;
+margin:auto 0;
+
+}
 
    
 .section4
-{padding: top 20px;
+{
 display:flex;
 flex-direction:column;
-padding-bottom: 20px;
-justify-items: flex-start;
-
+padding:2rem;
+gap:1rem;
 }
 
-
-.section4__lista 
-{display:flex;
-color: #070300;
-align-items: left;
-padding-top:30px;
-padding-bottom:30px;
-}
 
 .section4__frasealgunasempresasconquieneestrabajamos
-{  font-weight:bold;
-    display:flex;
-    margin:15px;
-    padding-bottom:10px;
+{font-weight:bold;
+display:flex;
+padding:1rem;
+
+    
+}
+.section4_estructura
+{gap:2rem;
+    
+}
+
+.section4lista
+{ display:flex;
+flex-direction:center;
+justify-content:center;
+list-style:none;
+text-align:center;
+padding:1rem;
 }
 
 .section4_enlace
-{align-items:left;
-padding-top: 30px;
-padding-bottom:20px}
-
-.section4__imagenrecursoshumanosempresas
 {display:flex;
-padding:20px;}
+flex-direction:column;
+font-weight:4rem;
+text-decoration:none;
+text-transform:initial;
+justify-content:center;
+margin:auto 0;
 
-.section4__contacto
-{
-    align-items:left;
-    padding-top:20px;
+    
+}
+.section4__color
+{color:#e4ded9;
+}
+
+.section4_azul{
+color:#2509a1;
 
 }
 
@@ -276,6 +264,18 @@ background-color:#827d79;
 .fondocontacto
 {background-color:rgb(223, 102, 16);
 }
+    
+.footer{
+    margin-top:2px;
+}
+
+
+
+.html 
+{font-size: 3rem;}
+
+
+
 
 /*
 
