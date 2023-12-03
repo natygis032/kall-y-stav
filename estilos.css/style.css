@@ -6,9 +6,13 @@ box-sizing:border-box;
 
 .header
 {
+font-weight:300px;
+color:#110803ef;
+width: 100%;
+height: 100%;
+/*border: 1px solid rgb(255, 0,76);*/
 display:flex;
 flex-direction:column;
-align-items: center;
 padding: 4rem;
 
 }
@@ -281,7 +285,6 @@ margin-top:2px;
 text-decoration:none;
 color: #070300;
 background-color:#ed870e;
-border-style: ;
 border-radius:0,5rem;
 border-style:solid black 2px;
 border-color:#070300;
@@ -336,7 +339,9 @@ border-style:ridge;
    /*media querys se aplican al final del archivo de estilos*/
    
    @media(min-widht: 768px)
-   {background-color:}
+   {
+    
+}
 
    
        
