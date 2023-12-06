@@ -7,21 +7,18 @@ box-sizing:border-box;
 .header
 {
 font-weight:300px;
-color:#110803ef;
-width: 100%;
+width: 600px;
 height: 100%;
-/*border: 1px solid rgb(255, 0,76);*/
 display:flex;
 flex-direction:column;
-padding: 4rem;
+padding:4rem;
 
 }
 
-.header,.main,.footer
+.header,.main,.footer,.body
 {
 margin:0 auto;
 max-width:600px;
-
 }
 
 
@@ -32,7 +29,9 @@ max-width:600px;
 height:auto;   
 display:flex;
 flex-direction:column;
-align-content: center;
+justify-items:center;
+align-items: center;
+justify-content: center;
 padding-bottom: 30px;
 }
 
@@ -44,7 +43,6 @@ font-weight:700;
 text-align:center;
 text-transform:uppercase;
 margin-bottom:2rem;
-
 }
 
 .header__fraseteestamosesperando 
@@ -53,20 +51,17 @@ font-weight:normal;
 font-size: 1rem;
 text-align:center;
 font-style:oblique;
-
-
 }
 
 .main
 { 
-max-width:600px;
 display:flex;
 flex-direction:column;
 }     
 
 .section1
 {padding:1rem;
-
+max-width:600px;
 }
 
 .section1__lista
@@ -74,18 +69,14 @@ flex-direction:column;
 padding:1rem;
 flex-direction:row;
 justify-content:space-around;
-align-items:center;
+align-content:center;
 gap:1rem;
-
 }
 
 .section1__item
 {  
 background-color:#ed870e;
-
 list-style:none;
-color:#e4ded9;
-
 }
 
 
@@ -95,6 +86,7 @@ display:flex;
 padding:1rem;
 text-decoration:none;
 color:aliceblue;
+align-self:center;
 }
 
 
@@ -103,15 +95,6 @@ color:aliceblue;
 background-color:#070300;
 color:#e4ded9;
 font-family: 'Ubuntu', sans-serif;
-}
-
-
-/*
-
- .volver_al_inicio
-{margin-left:50px;
-
-
 }
 
 /*
@@ -126,10 +109,8 @@ align-items:center; /*controla al eje secundario dependiendo de loq ue figura en
 padding:2rem;}
 
 
-.section__fraseubicacion
-{
-
-display:flex;
+.section2__fraseubicacion
+{display:flex;
 flex-direction:column;
 text-align:center;
 font-size:18px;
@@ -144,49 +125,42 @@ padding-top:10px;
   height:300px;
   margin:0 auto;
   display:flex;
-  
 }
 
 .section3
 {
-padding:1rem;
+padding-top:2rem;
+max-height:400px;
+max-width:600px;
+} 
 
-
-
-}
 
 .section3__lista
 {display:flex;
-flex-direction:column;
 padding:1rem;
-justify-content:center;
-list-style:none;
-align-items:center;
-gap:1rem;
+flex-direction:column;
+color:aliceblue;
+justify-content: center;
+align-content:center;
+gap:4rem;
 }
-
-
 
 .section3__item
 {
-width:300px;
-height:30px;
+width:auto;
+height:50px;
 background-color:#ed870e;
-text-align:center;
-border-radius:0.5rem;
-gap:1rem;
-
+justify-content:center;
+list-style:none;
 }
 
 .section3__enlace
-{font-weight:4rem;
-color:#e4ded9;
+{ 
+display:flex;
+padding:1rem;
 text-decoration:none;
-text-transform:none;
+color:aliceblue;
 align-items:center;
-justify-content:center;
-margin:0 auto;
-
 }
 
    
@@ -247,7 +221,8 @@ padding:2rem;
 
 .section5__boton
 {
-
+padding:0,5rem;
+margin-top:10px;
 text-decoration-color:rgb(24, 23, 22);
 background-color:rgb(223, 102, 16);
 border-color:black;
@@ -258,82 +233,50 @@ border-color:black;
 .section5__boton:hover
 {
 background-color:#827d79;
-
 }
 
-.fondocontacto
+.bodycontacto
 {background-color:rgb(223, 102, 16);
 }
     
 .footer{
-margin-top:2px;
+margin-top:2rem;
 }
 
-.lista_volveralinicio
-    
-  {
-    display:flex;
-    padding:1rem;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
-    
-
+.footerbanner{
+min-width: 600px;
+align-content:center;
 
 }
+
+.lista_volveralinicio    
+{
+display:flex;
+padding:1rem;
+flex-direction:row;
+justify-content:space-around;
+align-content:center;
+}
+
 .volver_al_inicio{
+margin:1rem;
 text-decoration:none;
-color: #070300;
+color:#070300;
 background-color:#ed870e;
 border-radius:0,5rem;
-border-style:solid black 2px;
+border-style:solid black 1px;
 border-color:#070300;
-width: 150px;
-height: 30px;
+width:150px;
+height:30px;
 text-align:center;
-
 border-style:ridge;
-
-
 }
 
 
 .html 
 {font-size: 3rem;}
 
-
-
-
-/*
-
-.piedepaginaturqueza{
-    background-color: #76bacb;
-    border: 0px solid black;
-    padding:0%;
-    
-}
-.fondorosa{
-    background-color: bisque;
-}
-
-
-
-    se pueden buscar generadores de color generator color css ó pictures css
-
-    ej color pickers css
-    https://cssgradient.io/gradient-backgrounds/
-    
-    body
-    {
-    background-color:#FFE53B}
-    o sino
-    
-    body
-    {
-    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);}
-   */
-
-   /*PARA APLICAR LOS ESTILOS EN LA PARTE DE LA PAGINA DE CONTACTO VAMOS A CREAR UNA NUEVA SECCION- SECCION 5/*
+/*PARA APLICAR LOS ESTILOS EN LA PARTE DE LA PAGINA DE CONTACTO VAMOS A CREAR UNA NUEVA SECCION- SECCION 5/*
 
 
    /*media querys se aplican al final del archivo de estilos*/
